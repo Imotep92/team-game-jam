@@ -141,21 +141,28 @@ public class PlayerController : MonoBehaviour
         // otherwise
         // if player is out of lives
         if (GameController.gameControllerScript.lives < 0)
-        { 
-            // deactivate the player
-            gameObject.SetActive(false);
-
-            // play player death sound
-            int playerDeathSound = 8;
-
-            AudioController.audioControllerScript.PlaySFX(playerDeathSound);
-
-            // show game over screen
-            GameController.gameControllerScript.GameOver();
-
-            // play game over music
-            AudioController.audioControllerScript.PlayGameOverMusic();
+        {
+            PlayerDead();
         }
+    }
+
+
+    public void PlayerDead()
+    {
+        // deactivate the player
+        gameObject.SetActive(false);
+
+        // play player death sound
+        int playerDeathSound = 8;
+
+        AudioController.audioControllerScript.PlaySFX(playerDeathSound);
+
+        // show game over screen
+        GameController.gameControllerScript.GameOver();
+
+        // play game over music
+        AudioController.audioControllerScript.PlayGameOverMusic();
+
     }
 
 
@@ -256,6 +263,7 @@ public class PlayerController : MonoBehaviour
             AudioController.audioControllerScript.PlayVictoryMusic();
 
         }
+
     }
 
 

@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7228870440347689742}
   - component: {fileID: 2871917028775471156}
-  - component: {fileID: 7707828021897224913}
   - component: {fileID: 9012523456674931403}
   - component: {fileID: 862781995803096803}
   - component: {fileID: -5392875668934424697}
@@ -60,18 +59,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &7707828021897224913
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 386874135076692210}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af347e4f2709541968ed38b5bf7214e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &9012523456674931403
 Rigidbody2D:
   serializedVersion: 5
@@ -129,7 +116,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -155,6 +142,7 @@ MonoBehaviour:
   shootRange: 9
   enemyHealth: 30
   enemyPoints: 30
+  enemyDamage: 100
   playerDamage: 20
   enemyShouldShoot: 1
   enemyBullet: {fileID: 7599505847366348637, guid: e6ed385152024414995d1a4cff6bc05a, type: 3}
@@ -237,7 +225,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1538048291
-  m_SortingLayer: 3
+  m_SortingLayer: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: 1344780287051860636, guid: 9f018159c9b7ec84cbed98f79c9145ed, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

@@ -3,11 +3,15 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 
+//
+// v2025.10.09
+//
 
 public class GameController : MonoBehaviour
 {
     // make game controller script accessible from other scripts
     public static GameController gameControllerScript;
+
 
     // array for doors
     public GameObject[] doors;
@@ -41,6 +45,10 @@ public class GameController : MonoBehaviour
 
     // reference to the player ui panel
     public GameObject playerUiPanel;
+
+    // reference to quit game background
+    public GameObject quitGameBackground;
+
 
     // reference to displayed 'Score Text' in the player ui panel
     public TMP_Text scoreText;
@@ -101,6 +109,9 @@ public class GameController : MonoBehaviour
 
     // is the game over
     public bool gameOver;
+
+    // level completed
+    public bool levelComplete;
 
     // if we are starting the level
     public bool levelStart;
@@ -176,7 +187,7 @@ public class GameController : MonoBehaviour
             if (!gamePawzed)
             {
                 // and the player has pressed the escape key
-                if (Input.GetKeyDown(KeyCode.Escape))
+                if (Input.GetKeyDown(KeyCode.P))
                 {
                     PawzGame();
                 }
@@ -331,6 +342,8 @@ public class GameController : MonoBehaviour
 
         levelStart = false;
 
+        levelComplete = false;
+
         enteredRoomTimer = coolDownTimer;
 
         hasEnterdRoom = true;
@@ -379,6 +392,23 @@ public class GameController : MonoBehaviour
         }
 
 
+        // if we are starting the level
+        if (levelComplete)
+        {
+            // close the options screen
+            optionsScreen.SetActive(false);
+
+            // close the game over screen
+            //gameOverScreen.SetActive(false);
+
+            // and open the title screen
+            titleScreen.SetActive(true);
+
+            // play title music
+            //AudioController.audioControllerScript.PlayTitleMusic();
+        }
+
+
         // if the game is pawzed
         if (gamePawzed)
         {
@@ -391,7 +421,7 @@ public class GameController : MonoBehaviour
 
 
         // if the game is over and we are not starting the level
-        if (gameOver && !levelStart)
+        if (gameOver && !levelStart && !levelComplete)
         {
             // close the options screen
             optionsScreen.SetActive(false);
@@ -406,6 +436,8 @@ public class GameController : MonoBehaviour
     {
         // game over
         gameOver = true;
+
+        levelComplete = true;
 
         inPlay = false;
 
@@ -477,6 +509,8 @@ public class GameController : MonoBehaviour
     public void QuitGame()
     {
         // quit the game
+        quitGameBackground.SetActive(true);
+
         Application.Quit();
     }
 

@@ -31,6 +31,9 @@ public class EnemyController : MonoBehaviour
     // enemy points
     public int enemyPoints;
 
+    // bullet damage
+    public int enemyDamage;
+
     // player damage
     public int playerDamage;
 
@@ -193,6 +196,25 @@ public class EnemyController : MonoBehaviour
     private void MoveEnemy()
     {
         enemyRigidbody.linearVelocity = enemyMovementDirection * enemyMovementSpeed;
+    }
+
+
+    private void OnCollisionEnter2D(Collision2D collidingObject)
+    {
+
+        // if the enemy collides with the player
+        if (collidingObject.gameObject.CompareTag("Player"))
+        {
+            // kill player
+            PlayerController.playerControllerScript.PlayerDead();
+
+            // play player hurt sound
+            int playerHurtSound = 10;
+
+            AudioController.audioControllerScript.PlaySFX(playerHurtSound);
+
+        }
+
     }
 
 

@@ -116,7 +116,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -152,6 +152,7 @@ MonoBehaviour:
   shootRange: 8
   enemyHealth: 10
   enemyPoints: 10
+  enemyDamage: 100
   playerDamage: 5
   enemyShouldShoot: 1
   enemyBullet: {fileID: 7599505847366348637, guid: e6ed385152024414995d1a4cff6bc05a, type: 3}
@@ -234,7 +235,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1538048291
-  m_SortingLayer: 3
+  m_SortingLayer: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: -697763020151794088, guid: f6d2031ae08f3a44e970306dbf01547f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

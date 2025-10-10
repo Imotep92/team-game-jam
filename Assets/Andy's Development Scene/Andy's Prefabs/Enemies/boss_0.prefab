@@ -160,7 +160,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1538048291
-  m_SortingLayer: 3
+  m_SortingLayer: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: -5038674048737802239, guid: fcb167cca22d441439f03a2fafb06eb8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -238,7 +238,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6468311213027531471}
   - component: {fileID: 7143643226792529817}
-  - component: {fileID: 9102790293682032236}
   - component: {fileID: 7394103815609163187}
   m_Layer: 15
   m_Name: eye3
@@ -298,20 +297,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: -0.005268991, y: 0}
   m_Radius: 0.054769576
---- !u!114 &9102790293682032236
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1435701544949730634}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf0460c3eb26647bda3c5494889776bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  injuredeye: {fileID: 659720323377097469}
-  eyehealth: 7
 --- !u!50 &7394103815609163187
 Rigidbody2D:
   serializedVersion: 5
@@ -413,7 +398,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1538048291
-  m_SortingLayer: 3
+  m_SortingLayer: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: -5038674048737802239, guid: fcb167cca22d441439f03a2fafb06eb8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -500,7 +485,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1538048291
-  m_SortingLayer: 3
+  m_SortingLayer: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: -5038674048737802239, guid: fcb167cca22d441439f03a2fafb06eb8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -587,7 +572,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1538048291
-  m_SortingLayer: 3
+  m_SortingLayer: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: -5038674048737802239, guid: fcb167cca22d441439f03a2fafb06eb8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -610,7 +595,6 @@ GameObject:
   m_Component:
   - component: {fileID: 550219654562616222}
   - component: {fileID: 1118231515657935453}
-  - component: {fileID: 1940386006903810666}
   - component: {fileID: 5009031397255085979}
   m_Layer: 15
   m_Name: eye4
@@ -670,20 +654,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: -0.005268991, y: 0}
   m_Radius: 0.054769576
---- !u!114 &1940386006903810666
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4887467500727540276}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf0460c3eb26647bda3c5494889776bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  injuredeye: {fileID: 8465853009371170553}
-  eyehealth: 7
 --- !u!50 &5009031397255085979
 Rigidbody2D:
   serializedVersion: 5
@@ -861,6 +831,7 @@ MonoBehaviour:
   shootRange: 8
   enemyHealth: 100
   enemyPoints: 100
+  enemyDamage: 100
   playerDamage: 20
   enemyShouldShoot: 1
   enemyBullet: {fileID: 7599505847366348637, guid: e6ed385152024414995d1a4cff6bc05a, type: 3}
@@ -943,7 +914,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1538048291
-  m_SortingLayer: 3
+  m_SortingLayer: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: -2424553518018739129, guid: 6c291935473374d749fb7d18b2b0db90, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1021,7 +992,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4390849322579903368}
   - component: {fileID: 6957429736583189915}
-  - component: {fileID: 8727618272998562236}
   - component: {fileID: 2288115547254710681}
   m_Layer: 15
   m_Name: eye2
@@ -1081,20 +1051,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: -0.005268991, y: 0}
   m_Radius: 0.054769576
---- !u!114 &8727618272998562236
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8312726284752348285}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf0460c3eb26647bda3c5494889776bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  injuredeye: {fileID: 1171668122417275772}
-  eyehealth: 7
 --- !u!50 &2288115547254710681
 Rigidbody2D:
   serializedVersion: 5
@@ -1187,7 +1143,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4162008609489154645}
   - component: {fileID: 2023346111435260259}
-  - component: {fileID: 6902539695127845822}
   - component: {fileID: 3350379046908619784}
   m_Layer: 15
   m_Name: eye1
@@ -1247,20 +1202,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: -0.005268991, y: 0}
   m_Radius: 0.054769576
---- !u!114 &6902539695127845822
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8674660483360820693}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf0460c3eb26647bda3c5494889776bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  injuredeye: {fileID: 7596324249940871201}
-  eyehealth: 7
 --- !u!50 &3350379046908619784
 Rigidbody2D:
   serializedVersion: 5
