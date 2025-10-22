@@ -151,10 +151,10 @@ TextureImporter:
       name: enemy2 perish_0
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 64
-        width: 31
-        height: 31
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,10 +173,10 @@ TextureImporter:
       name: enemy2 perish_1
       rect:
         serializedVersion: 2
-        x: 33
+        x: 32
         y: 64
-        width: 31
-        height: 31
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,10 +195,10 @@ TextureImporter:
       name: enemy2 perish_2
       rect:
         serializedVersion: 2
-        x: 1
-        y: 33
-        width: 63
-        height: 27
+        x: 0
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -217,10 +217,10 @@ TextureImporter:
       name: enemy2 perish_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 64
-        height: 23
+        x: 32
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -235,11 +235,55 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: enemy2 perish_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 673e793547f11473890874e0bed4c9d5
+      internalID: -535203015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy2 perish_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1589e2346c06548479f90484ae2582a7
+      internalID: 488066306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a8a4185b941ca4f23910e81d26752b2c
     internalID: 0
     vertices: []
     indices: 
@@ -253,6 +297,8 @@ TextureImporter:
       enemy2 perish_1: 2938736535535806455
       enemy2 perish_2: -55463276471585229
       enemy2 perish_3: -7150570292621307650
+      enemy2 perish_4: -535203015
+      enemy2 perish_5: 488066306
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
